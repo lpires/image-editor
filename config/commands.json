@@ -1,0 +1,26 @@
+{
+	"L": {
+		"description": "Colour position",
+		"method": "position",
+		"set": ["#{x1} = #{x}", "#{y1} = #{y}"],
+		"rules": ["#{x1} == #{x}", "#{y1} == #{y}"]
+	},
+	"V": {
+		"description": "Draw vertical line",
+		"method": "position",
+		"set": ["#{x1} = #{x}"],
+		"rules": ["#{x1} == #{x}", "#{y0} <= #{y}", "#{y} <= #{y1}"]
+	},
+	"H": {
+		"description": "Draw horizontal line",
+		"method": "position",
+		"set": ["#{y1} = #{y}"],
+		"rules": ["#{y1} == #{y}", "#{x0} <= #{x}", "#{x} <= #{x1}"]
+	},
+	"F": {
+	    "description": "Draw region",
+	    "method": "position",
+	    "set": ["#{c0} = :#{c}", "#{x0} = 0", "#{y0} = 0"],
+		"rules": [":#{c} == :#{c0}","#{y0}-1 <= #{y}","#{y} <= #{y0}+1", "#{x0}-1 <= #{x}", "#{x} <= #{x0}+1"]
+	}
+}

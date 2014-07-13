@@ -1,0 +1,12 @@
+This is a Test example that use the command patter design to illustrated a image editor.
+
+To run this application you will need to compile the Javascript, to do so:
+
+1. Install node
+2. go to /public
+3. In the project folder run: npm install
+4. In the project folder run: npm start
+
+To run the application just run
+
+1. ruby app.rb
